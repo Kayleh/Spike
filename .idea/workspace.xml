@@ -14,6 +14,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -24,6 +27,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1l8aOCQfxDZNWtUIMO1aU8LYRmx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -51,7 +55,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606981137346</updated>
       <workItem from="1606981138920" duration="20870000" />
-      <workItem from="1607067952548" duration="629000" />
+      <workItem from="1607067952548" duration="1110000" />
     </task>
     <servers />
   </component>
