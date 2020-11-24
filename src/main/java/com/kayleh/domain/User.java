@@ -9,8 +9,7 @@ public class User
     int id;
     String name;
 
-    public int getId()
-    {
+    public int getId() {
         return id;
     }
 
