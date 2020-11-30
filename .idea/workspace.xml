@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d87655e-a1a3-4d63-9239-9be045d4a42e" name="Default Changelist" comment="" />
+    <list default="true" id="0d87655e-a1a3-4d63-9239-9be045d4a42e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/redis/UserKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/redis/UserKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,7 +58,8 @@
       <option name="presentableId" value="Default" />
       <updated>1606981137346</updated>
       <workItem from="1606981138920" duration="20870000" />
-      <workItem from="1607067952548" duration="1110000" />
+      <workItem from="1607067952548" duration="5866000" />
+      <workItem from="1607136699391" duration="378000" />
     </task>
     <servers />
   </component>
