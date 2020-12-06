@@ -61,6 +61,7 @@ public class CodeMsg
         this.msg = msg;
     }
 
+    //其中String.format()能够根据传入的字符串格式，比如"参数校验异常：%s"，其中%s，能被第二个传入的参数进行替换，从而形成动态的字符串
     public CodeMsg fillArgs(Object... args)
     {
         int code = this.code;

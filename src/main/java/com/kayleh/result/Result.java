@@ -17,7 +17,7 @@ public class Result<T>
         this.data = data;
     }
 
-    public static <T> Result<T> error(T data)
+    public static <T> Result<T> error(CodeMsg data)
     {
         return new Result<T>(data);
     }

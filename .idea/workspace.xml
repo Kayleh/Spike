@@ -2,8 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d87655e-a1a3-4d63-9239-9be045d4a42e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/redis/UserKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/redis/UserKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/Service/SpikeUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/dao/SpikeUserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/domain/SpikeUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/exception/GlobalException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/redis/SpikeUserKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/util/MD5Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/util/UUIDUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/util/ValidatorUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/validator/IsMobile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/validator/IsMobileValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/vo/LoginVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/result/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/result/Result.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/Service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/Service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/pojo/User.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +48,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1l8aOCQfxDZNWtUIMO1aU8LYRmx" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -39,13 +59,44 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../miaosha/pom.xml" />
     <property name="settings.editor.selected.configurable" value="spring.boot" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.kayleh.util" />
+      <recent name="com.kayleh.exception" />
+      <recent name="com.kayleh.Service" />
       <recent name="com.kayleh.result" />
       <recent name="mapper" />
     </key>
+  </component>
+  <component name="RunManager" selected="Application.MD5Util">
+    <configuration name="MD5Util" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kayleh.util.MD5Util" />
+      <module name="Spike" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kayleh.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Spike" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kayleh.MainApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MD5Util" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -59,7 +110,8 @@
       <updated>1606981137346</updated>
       <workItem from="1606981138920" duration="20870000" />
       <workItem from="1607067952548" duration="5866000" />
-      <workItem from="1607136699391" duration="378000" />
+      <workItem from="1607136699391" duration="17510000" />
+      <workItem from="1607227208300" duration="4676000" />
     </task>
     <servers />
   </component>
@@ -67,14 +119,38 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="717" y="137" key="#com.intellij.ide.util.MemberChooser" timestamp="1607000961214">
+    <state x="717" y="137" key="#com.intellij.ide.util.MemberChooser" timestamp="1607185194533">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="717" y="137" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1607000961214" />
+    <state x="717" y="137" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1607185194533" />
+    <state x="623" y="251" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1607235016700">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="251" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1607235016700" />
     <state x="692" y="430" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1606983103084">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="692" y="430" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606983103084" />
+    <state x="686" y="230" key="FileChooserDialogImpl" timestamp="1607227253348">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="686" y="230" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1607227253348" />
+    <state width="1849" height="272" key="GridCell.Tab.0.bottom" timestamp="1607189565443">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1849" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1607189565443" />
+    <state width="1849" height="272" key="GridCell.Tab.0.center" timestamp="1607189565443">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1849" height="272" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1607189565443" />
+    <state width="1849" height="272" key="GridCell.Tab.0.left" timestamp="1607189565442">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1849" height="272" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1607189565442" />
+    <state width="1849" height="272" key="GridCell.Tab.0.right" timestamp="1607189565443">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1849" height="272" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1607189565443" />
     <state x="373" y="105" key="Maven.ArtifactSearchDialog" timestamp="1606982833122">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
