@@ -38,6 +38,8 @@ public class RedisService
 
 
     /**
+     * 键：带前缀的key
+     * 值：用户对象
      * 设置对象
      * <p>
      * 根据自动装配获取JedisPool，用Jedis连接池来拿出Jedis与Redis服务器建立连接。

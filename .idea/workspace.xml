@@ -2,26 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d87655e-a1a3-4d63-9239-9be045d4a42e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/Service/SpikeUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/dao/SpikeUserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/domain/SpikeUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/exception/GlobalException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/redis/SpikeUserKey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/util/MD5Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/util/UUIDUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/util/ValidatorUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/validator/IsMobile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/validator/IsMobileValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/vo/LoginVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/result/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/result/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/Service/GoodsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/config/UserArgumentResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/controller/GoodsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/dao/GoodsDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/domain/Goods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/domain/SpikeGoods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/redis/GoodsKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/vo/GoodsVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/1.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/Service/SpikeUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/Service/SpikeUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/redis/RedisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/redis/RedisService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/Service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/Service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/pojo/User.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,11 +57,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.kayleh.util" />
-      <recent name="com.kayleh.exception" />
+      <recent name="com.kayleh.domain" />
       <recent name="com.kayleh.Service" />
-      <recent name="com.kayleh.result" />
-      <recent name="mapper" />
+      <recent name="com.kayleh.vo" />
+      <recent name="com.kayleh.config" />
+      <recent name="com.kayleh.util" />
     </key>
   </component>
   <component name="RunManager" selected="Application.MD5Util">
@@ -111,7 +104,7 @@
       <workItem from="1606981138920" duration="20870000" />
       <workItem from="1607067952548" duration="5866000" />
       <workItem from="1607136699391" duration="17510000" />
-      <workItem from="1607227208300" duration="4676000" />
+      <workItem from="1607227208300" duration="21166000" />
     </task>
     <servers />
   </component>
@@ -119,14 +112,18 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="717" y="137" key="#com.intellij.ide.util.MemberChooser" timestamp="1607185194533">
+    <state x="551" y="184" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607258993933">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="717" y="137" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1607185194533" />
-    <state x="623" y="251" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1607235016700">
+    <state x="551" y="184" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1607258993933" />
+    <state x="717" y="137" key="#com.intellij.ide.util.MemberChooser" timestamp="1607272242739">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="251" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1607235016700" />
+    <state x="717" y="137" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1607272242739" />
+    <state x="623" y="251" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1607272160035">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="251" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1607272160035" />
     <state x="692" y="430" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1606983103084">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

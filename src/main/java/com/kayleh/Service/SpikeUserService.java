@@ -114,9 +114,11 @@ public class SpikeUserService
 
     private void addCookie(HttpServletResponse response, String token, SpikeUser user)
     {
+        //首次登陆的时候，需要将Cookie存入Redis
         redisService.set(SpikeUserKey.token, token, user);
         Cookie cookie = new Cookie(COOKI_NAME_TOKEN, token);
         cookie.setMaxAge(SpikeUserKey.token.expireSeconds());
+        //设置为根目录，则可以在整个应用范围内使用cookie
         cookie.setPath("/");
         response.addCookie(cookie);
     }
