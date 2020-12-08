@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d87655e-a1a3-4d63-9239-9be045d4a42e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/Service/GoodsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/config/UserArgumentResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/controller/GoodsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/dao/GoodsDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/domain/Goods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/domain/SpikeGoods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/redis/GoodsKey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/vo/GoodsVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/1.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/Service/SpikeUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/Service/SpikeUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/redis/RedisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/redis/RedisService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/dao/OrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/vo/GoodsDetailVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/Service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/Service/GoodsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/controller/GoodsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/1.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/redis/RedisService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/redis/RedisService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/result/CodeMsg.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/result/CodeMsg.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/result/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/result/Result.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/util/MD5Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/util/MD5Util.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -57,9 +55,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.kayleh.vo" />
       <recent name="com.kayleh.domain" />
       <recent name="com.kayleh.Service" />
-      <recent name="com.kayleh.vo" />
       <recent name="com.kayleh.config" />
       <recent name="com.kayleh.util" />
     </key>
@@ -105,6 +103,8 @@
       <workItem from="1607067952548" duration="5866000" />
       <workItem from="1607136699391" duration="17510000" />
       <workItem from="1607227208300" duration="21166000" />
+      <workItem from="1607354906650" duration="6355000" />
+      <workItem from="1607442102285" duration="1015000" />
     </task>
     <servers />
   </component>
@@ -116,10 +116,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="551" y="184" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1607258993933" />
-    <state x="717" y="137" key="#com.intellij.ide.util.MemberChooser" timestamp="1607272242739">
+    <state x="717" y="137" key="#com.intellij.ide.util.MemberChooser" timestamp="1607360736254">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="717" y="137" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1607272242739" />
+    <state x="717" y="137" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1607360736254" />
     <state x="623" y="251" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1607272160035">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -128,10 +128,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="692" y="430" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606983103084" />
-    <state x="686" y="230" key="FileChooserDialogImpl" timestamp="1607227253348">
+    <state x="686" y="230" key="FileChooserDialogImpl" timestamp="1607357651544">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="686" y="230" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1607227253348" />
+    <state x="686" y="230" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1607357651544" />
     <state width="1849" height="272" key="GridCell.Tab.0.bottom" timestamp="1607189565443">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

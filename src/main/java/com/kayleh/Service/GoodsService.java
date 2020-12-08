@@ -33,7 +33,7 @@ public class GoodsService
         SpikeGoods g = new SpikeGoods();
         g.setGoodsId(goods.getId());
         int ret = goodsDao.reduceStock(g);
-        return ret>0;
+        return ret > 0;
     }
 
 }
