@@ -2,16 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d87655e-a1a3-4d63-9239-9be045d4a42e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/dao/OrderDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/vo/GoodsDetailVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/Service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/Service/GoodsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/controller/GoodsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/1.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/redis/RedisService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/redis/RedisService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/result/CodeMsg.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/result/CodeMsg.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/result/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/result/Result.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/util/MD5Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/util/MD5Util.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/domain/OrderInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/goods_detail.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/function.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/iphonex.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/meta10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/technical.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation/additional-methods.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation/jquery.validate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation/localization/messages_zh.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/md5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/layer/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/layer/mobile/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/layer/mobile/need/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/layer/skin/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/layer/skin/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/layer/skin/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/layer/skin/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/layer/skin/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/layer/skin/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/goods_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/goods_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/dao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/dao/OrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/domain/SpikeOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/domain/SpikeOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/1.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/controller/GoodsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/controller/GoodsController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +56,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -46,17 +83,22 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../miaosha/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static" />
     <property name="settings.editor.selected.configurable" value="spring.boot" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\Spike\src\main\resources\static" />
+      <recent name="D:\project\Spike\src\main\resources\static\js" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.kayleh.vo" />
       <recent name="com.kayleh.domain" />
+      <recent name="com.kayleh.vo" />
       <recent name="com.kayleh.Service" />
       <recent name="com.kayleh.config" />
       <recent name="com.kayleh.util" />
@@ -104,7 +146,8 @@
       <workItem from="1607136699391" duration="17510000" />
       <workItem from="1607227208300" duration="21166000" />
       <workItem from="1607354906650" duration="6355000" />
-      <workItem from="1607442102285" duration="1015000" />
+      <workItem from="1607442102285" duration="5191000" />
+      <workItem from="1607501280037" duration="13314000" />
     </task>
     <servers />
   </component>
@@ -116,10 +159,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="551" y="184" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1607258993933" />
-    <state x="717" y="137" key="#com.intellij.ide.util.MemberChooser" timestamp="1607360736254">
+    <state x="717" y="137" key="#com.intellij.ide.util.MemberChooser" timestamp="1607445789690">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="717" y="137" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1607360736254" />
+    <state x="717" y="137" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1607445789690" />
     <state x="623" y="251" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1607272160035">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -156,10 +199,18 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="320" y="89" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1606988577198" />
+    <state width="698" height="627" key="SwitcherDM" timestamp="1607504266608">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="698" height="627" key="SwitcherDM/0.0.1920.1080@0.0.1920.1080" timestamp="1607504266608" />
     <state x="659" y="292" key="chooseDestDirectoryDialog" timestamp="1606982233165">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="659" y="292" key="chooseDestDirectoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606982233165" />
+    <state x="539" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1607502071872">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="539" y="45" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1607502071872" />
     <state x="622" y="131" key="spring file set editor" timestamp="1606983125982">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

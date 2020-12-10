@@ -1,5 +1,6 @@
 package com.kayleh.dao;
 
+import com.kayleh.domain.OrderInfo;
 import com.kayleh.domain.SpikeOrder;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Param;
