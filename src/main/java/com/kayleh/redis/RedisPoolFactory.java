@@ -1,6 +1,7 @@
 package com.kayleh.redis;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
@@ -11,11 +12,12 @@ import redis.clients.jedis.JedisPoolConfig;
  * @Date: 2020/12/3 17:42
  */
 @Service
-public class JedisPoolFactory
+public class RedisPoolFactory
 {
     @Autowired
     RedisConfig redisConfig;
 
+    @Bean
     public JedisPool JedisPoolFactory()
     {
         JedisPoolConfig poolConfig = new JedisPoolConfig();

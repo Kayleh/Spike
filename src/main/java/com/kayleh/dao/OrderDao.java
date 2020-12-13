@@ -2,15 +2,13 @@ package com.kayleh.dao;
 
 import com.kayleh.domain.OrderInfo;
 import com.kayleh.domain.SpikeOrder;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.SelectKey;
+import org.apache.ibatis.annotations.*;
 
 /**
  * @Author: Kayleh
  * @Date: 2020/12/8 23:45
  */
+@Mapper
 public interface OrderDao
 {
     @Select("select * from  spike_order where user_id=#{userId} and goods_id=#{goodsId}")

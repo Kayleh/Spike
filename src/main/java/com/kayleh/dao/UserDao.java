@@ -1,4 +1,4 @@
-package com.kayleh.mapper;
+package com.kayleh.dao;
 
 import com.kayleh.domain.User;
 import org.apache.ibatis.annotations.Insert;
@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
  */
 @Mapper
 @Component
-public interface UserMapper
+public interface UserDao
 {
     @Select("select * from user where id = #{id}")
     User selectById(@Param("id") int id);

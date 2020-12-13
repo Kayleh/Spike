@@ -8,7 +8,7 @@ primary key (id)
 DEFAULT CHARSET = utf8mb4 COMMENT ='用户表';
 
 -- 秒杀用户表
-CREATE TABLE miaosha_user
+CREATE TABLE spike_user
 (
 id bigint(20) NOT NULL COMMENT '用户ID,手机号码',
 nickname varchar(255) NOT NULL,
@@ -21,7 +21,7 @@ login_count int(11) DEFAULT 0 COMMENT '录次数',
 PRIMARY KEY (id)
 ) ENGINE = InnoDB
 DEFAULT CHARSET = utf8mb4 COMMENT ='用户表';
-alter table miaosha_user
+alter table spike_user
 COMMENT ='秒杀用户表';
 
 -- 商品表
@@ -47,11 +47,11 @@ VALUES (2, '华为Meta9', '华为 Mate 9 4GB+32GB版 月光银 移动联通电�
 '华为 Mate 9 4GB+32GB版 月光银 移动联通电信4G手机 双卡双待', 3212.00, 10);
 
 -- 秒杀商品表
-CREATE TABLE miaosha_goods
+CREATE TABLE spike_goods
 (
 id bigint(20) NOT NULL AUTO_INCREMENT COMMENT '秒杀的商品表',
 goods_id bigint(20) DEFAULT NULL COMMENT '商品ld',
-miaosha_price decimal(10, 2) DEFAULT 0.00 COMMENT '秒杀价',
+spike_price decimal(10, 2) DEFAULT 0.00 COMMENT '秒杀价',
 stock_count int(11) DEFAULT NULL COMMENT '库存数量',
 start_date datetime DEFAULT NULL COMMENT '秒杀开始时间',
 end_date datetime DEFAULT NULL COMMENT '秒杀结束时间',
@@ -60,7 +60,7 @@ PRIMARY KEY (id)
 AUTO_INCREMENT = 3
 DEFAULT CHARSET = utf8mb4 COMMENT ='秒杀商品表';
 
-INSERT INTO miaosha_goods
+INSERT INTO spike_goods
 VALUES (1, 1, 0.01, 10, '2017-11-05 15:18:00', '2017-11-13 14:00:18'),
 (2, 2, 0.01, 10, '2017-11-05 15:18:00', '2017-11-13 14:00:18');
 
@@ -84,7 +84,7 @@ AUTO_INCREMENT = 12
 DEFAULT CHARSET = utf8mb4 COMMENT ='订单表';
 
 -- 秒杀订单表
-CREATE TABLE miaosha_order
+CREATE TABLE spike_order
 (
 id bigint(20) NOT NULL AUTO_INCREMENT,
 user_id bigint(20) DEFAULT NULL COMMENT '用户ID',

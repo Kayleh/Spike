@@ -1,7 +1,7 @@
 package com.kayleh.Service;
 
 import com.kayleh.domain.User;
-import com.kayleh.mapper.UserMapper;
+import com.kayleh.dao.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -14,7 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 public class UserService
 {
     @Autowired
-    UserMapper userMapper;
+    UserDao userMapper;
 
     @Transactional
     public boolean tx()
