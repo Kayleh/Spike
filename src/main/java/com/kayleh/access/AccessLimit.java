@@ -18,5 +18,5 @@ public @interface AccessLimit
 
     int maxCount();
 
-    boolean needLogin();
+    boolean needLogin() default true;
 }

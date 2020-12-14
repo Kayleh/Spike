@@ -145,7 +145,7 @@
                     layer.msg(data.msg);
                 }
             }, error: function () {
-                layer.msg("客户端请求失败");
+                layer.msg("客户端请求有误");
             }
         });
     }
@@ -173,7 +173,7 @@
 
 
     function render(detail) {
-        var miaoshaStatus = detail.spikeStatus;
+        var spikeStatus = detail.spikeStatus;
         var remainSeconds = detail.remainSeconds;
         var goods = detail.goods;
         var user = detail.user;

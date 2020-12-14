@@ -16,6 +16,7 @@ import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.util.List;
 import java.util.Random;
 
 /**
@@ -192,4 +193,21 @@ public class SpikeSerivce
             return 0;
         }
     }
+
+    public boolean checkPath(SpikeUser user, long goodsId, String path)
+    {
+        if (user == null || path == null)
+        {
+            return false;
+        }
+        String pathOld = redisService.get(SpikeKey.getSpikePath, "" + user.getId() + "_" + goodsId, String.class);
+        return path.equals(pathOld);
+    }
+
+    public void reset(List<GoodsVo> goodsList)
+    {
+        goodsService.resetStock(goodsList);
+        orderService.deleteOrders();
+    }
+
 }

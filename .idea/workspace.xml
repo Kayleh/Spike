@@ -2,52 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d87655e-a1a3-4d63-9239-9be045d4a42e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/Service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/Service/SpikeSerivce.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/access/AccessInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/access/AccessLimit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/access/UserContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/controller/SpikeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/rabbitmq/MQConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/rabbitmq/MQReceiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/rabbitmq/MQSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/rabbitmq/SpikeMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/redis/AccessKey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/redis/OrderKey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/redis/SpikeKey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/util/DBUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/util/UserUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/vo/OrderDetailVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/additional-spring-configuration-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/order_detail.htm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/miaosha_fail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/order_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/Service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/config/UserArgumentResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/config/UserArgumentResolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/Service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/Service/GoodsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/Service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/Service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/Service/SpikeSerivce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/Service/SpikeSerivce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/access/AccessLimit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/access/AccessLimit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/controller/SpikeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/controller/SpikeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/dao/GoodsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/dao/GoodsDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/dao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/dao/OrderDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/redis/JedisPoolFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/redis/RedisPoolFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/result/CodeMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/result/CodeMsg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/result/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/result/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/1.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/redis/RedisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/redis/RedisService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/goods_detail.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/goods_detail.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/goods_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/goods_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/goods_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/goods_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/1.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/Service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/Service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/config/UserArgumentResolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/config/UserArgumentResolver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/config/WebConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/order_detail.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/order_detail.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/order_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/order_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/Service/GoodsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/Service/GoodsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/Service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/Service/OrderService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/Service/SpikeSerivce.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/Service/SpikeSerivce.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/access/AccessLimit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/access/AccessLimit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/controller/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/controller/SpikeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/controller/SpikeController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/dao/GoodsDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/dao/GoodsDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/dao/OrderDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/dao/OrderDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/mapper/UserMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/redis/JedisPoolFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/result/CodeMsg.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/result/CodeMsg.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/rabbitmq/MQReceiver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/rabbitmq/MQReceiver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/redis/RedisService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/redis/RedisService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/goods_detail.htm" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/goods_detail.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/order_detail.htm" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/order_detail.htm" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +75,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../seckilling/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -182,7 +161,7 @@
       <workItem from="1607695560387" duration="8301000" />
       <workItem from="1607775459305" duration="15919000" />
       <workItem from="1607831031183" duration="6081000" />
-      <workItem from="1607840692727" duration="5083000" />
+      <workItem from="1607840692727" duration="20145000" />
     </task>
     <servers />
   </component>
@@ -218,42 +197,42 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="592" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1607832455964" />
-    <state x="686" y="230" key="FileChooserDialogImpl" timestamp="1607357651544">
+    <state x="686" y="230" key="FileChooserDialogImpl" timestamp="1607848727231">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="686" y="230" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1607357651544" />
-    <state width="1849" height="433" key="GridCell.Tab.0.bottom" timestamp="1607845118659">
+    <state x="686" y="230" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1607848727231" />
+    <state width="1849" height="433" key="GridCell.Tab.0.bottom" timestamp="1607875669967">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1849" height="433" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1607845118659" />
-    <state width="1849" height="433" key="GridCell.Tab.0.center" timestamp="1607845118659">
+    <state width="1849" height="433" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1607875669967" />
+    <state width="1849" height="433" key="GridCell.Tab.0.center" timestamp="1607875669967">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1849" height="433" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1607845118659" />
-    <state width="1849" height="433" key="GridCell.Tab.0.left" timestamp="1607845118659">
+    <state width="1849" height="433" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1607875669967" />
+    <state width="1849" height="433" key="GridCell.Tab.0.left" timestamp="1607875669967">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1849" height="433" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1607845118659" />
-    <state width="1849" height="433" key="GridCell.Tab.0.right" timestamp="1607845118659">
+    <state width="1849" height="433" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1607875669967" />
+    <state width="1849" height="433" key="GridCell.Tab.0.right" timestamp="1607875669967">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1849" height="433" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1607845118659" />
-    <state width="1849" height="433" key="GridCell.Tab.1.bottom" timestamp="1607845118659">
+    <state width="1849" height="433" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1607875669967" />
+    <state width="1849" height="433" key="GridCell.Tab.1.bottom" timestamp="1607875669963">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1849" height="433" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1607845118659" />
-    <state width="1849" height="433" key="GridCell.Tab.1.center" timestamp="1607845118659">
+    <state width="1849" height="433" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1607875669963" />
+    <state width="1849" height="433" key="GridCell.Tab.1.center" timestamp="1607875669963">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1849" height="433" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1607845118659" />
-    <state width="1849" height="433" key="GridCell.Tab.1.left" timestamp="1607845118659">
+    <state width="1849" height="433" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1607875669963" />
+    <state width="1849" height="433" key="GridCell.Tab.1.left" timestamp="1607875669963">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1849" height="433" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1607845118659" />
-    <state width="1849" height="433" key="GridCell.Tab.1.right" timestamp="1607845118659">
+    <state width="1849" height="433" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1607875669963" />
+    <state width="1849" height="433" key="GridCell.Tab.1.right" timestamp="1607875669963">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1849" height="433" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1607845118659" />
+    <state width="1849" height="433" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1607875669963" />
     <state x="373" y="105" key="Maven.ArtifactSearchDialog" timestamp="1606982833122">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -270,10 +249,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="659" y="292" key="chooseDestDirectoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606982233165" />
-    <state x="539" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1607845507266">
+    <state x="539" y="41" width="842" height="1037" key="search.everywhere.popup" timestamp="1607873484333">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="539" y="45" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1607845507266" />
+    <state x="539" y="41" width="842" height="1037" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1607873484333" />
     <state x="622" y="131" key="spring file set editor" timestamp="1606983125982">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

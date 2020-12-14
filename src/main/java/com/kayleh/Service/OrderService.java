@@ -57,4 +57,10 @@ public class OrderService
         redisService.set(OrderKey.getSpikeOrderByUidGid, "" + user.getId() + "_" + goods.getId(), spikeOrder);
         return orderInfo;
     }
+
+    public void deleteOrders()
+    {
+        orderDao.deleteOrders();
+        orderDao.deleteMiaoshaOrders();
+    }
 }

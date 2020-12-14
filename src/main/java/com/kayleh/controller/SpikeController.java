@@ -9,7 +9,9 @@ import com.kayleh.domain.SpikeUser;
 import com.kayleh.rabbitmq.MQSender;
 import com.kayleh.rabbitmq.SpikeMessage;
 import com.kayleh.redis.GoodsKey;
+import com.kayleh.redis.OrderKey;
 import com.kayleh.redis.RedisService;
+import com.kayleh.redis.SpikeKey;
 import com.kayleh.result.CodeMsg;
 import com.kayleh.result.Result;
 import com.kayleh.vo.GoodsVo;
@@ -17,10 +19,7 @@ import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletRequest;
@@ -65,13 +64,50 @@ public class SpikeController implements InitializingBean
             localOverMap.put(goods.getId(), false);
         }
     }
-
-    @RequestMapping(value = "/do_spike", method = RequestMethod.POST)
+    @RequestMapping(value = "/reset", method = RequestMethod.GET)
     @ResponseBody
-    public Result<Integer> spike(Model model, SpikeUser user, @RequestParam("goodsId") long goodsId)
+    public Result<Boolean> reset(Model model) {
+        List<GoodsVo> goodsList = goodsService.listGoodsVo();
+        for (GoodsVo goods : goodsList) {
+            goods.setStockCount(10);
+            redisService.set(GoodsKey.getSpikeGoodsStock, "" + goods.getId(), 10);
+            localOverMap.put(goods.getId(), false);
+        }
+        redisService.delete(OrderKey.getSpikeOrderByUidGid);
+        redisService.delete(SpikeKey.isGoodsOver);
+        spikeSerivce.reset(goodsList);
+        return Result.success(true);
+    }
+//    @RequestMapping(value = "/reset", method = RequestMethod.GET)
+//    @ResponseBody
+//    public Result<Boolean> reset(Model model)
+//    {
+//        List<GoodsVo> goodsList = goodsService.listGoodsVo();
+//        for (GoodsVo goods : goodsList)
+//        {
+//            goods.setStockCount(10);
+//            redisService.set(GoodsKey.getSpikeGoodsStock, "" + goods.getId(), 10);
+//            localOverMap.put(goods.getId(), false);
+//        }
+//        redisService.delete(OrderKey.getMiaoshaOrderByUidGid);
+//        redisService.delete(MiaoshaKey.isGoodsOver);
+//        miaoshaService.reset(goodsList);
+//        return Result.success(true);
+//    }
+
+    @RequestMapping(value = "/{path}/do_spike", method = RequestMethod.POST)
+    @ResponseBody
+    public Result<Integer> spike(Model model, SpikeUser user, @RequestParam("goodsId") long goodsId, @PathVariable("path") String path)
     {
         model.addAttribute("user", user);
         if (user == null) return Result.error(CodeMsg.SESSION_ERROR);
+
+        // 验证path
+        boolean check = spikeSerivce.checkPath(user, goodsId, path);
+        if (!check)
+        {
+            return Result.error(CodeMsg.REQUEST_ILLEGAL);
+        }
         //内存标记,减少redis访问
         boolean over = localOverMap.get(goodsId);
         if (over)
@@ -105,6 +141,7 @@ public class SpikeController implements InitializingBean
      * 0： 排队中
      */
     @RequestMapping(value = "/result", method = RequestMethod.GET)
+    @ResponseBody
     public Result<Long> SpikeResult(Model model, SpikeUser user, @RequestParam("goodsId") long goodsId)
     {
         model.addAttribute("user", user);

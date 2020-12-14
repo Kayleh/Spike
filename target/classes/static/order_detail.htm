@@ -103,7 +103,7 @@
                 orderId: orderId
             },
             success: function (data) {
-                if (data.code) {
+                if (data.code==0) {
                     render(data.data);
                 } else {
                     layer.msg(data.msg);

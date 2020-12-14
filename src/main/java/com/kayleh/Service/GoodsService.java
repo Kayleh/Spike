@@ -36,4 +36,15 @@ public class GoodsService
         return ret > 0;
     }
 
+    public void resetStock(List<GoodsVo> goodsList)
+    {
+        for (GoodsVo goods : goodsList)
+        {
+            SpikeGoods g = new SpikeGoods();
+            g.setGoodsId(goods.getId());
+            g.setStockCount(goods.getStockCount());
+            goodsDao.resetStock(g);
+        }
+    }
+
 }
