@@ -8,6 +8,7 @@ import redis.clients.jedis.JedisPoolConfig;
 
 /**
  * RedisConfig，作为Bean自动装配进来，我们还要建立JedisPoolConfig来设置一些参数，供建立JedisPool时读取
+ *
  * @Author: Kayleh
  * @Date: 2020/12/3 17:42
  */
@@ -24,8 +25,13 @@ public class RedisPoolFactory
         poolConfig.setMaxIdle(redisConfig.getPoolMaxIdle());
         poolConfig.setMaxTotal(redisConfig.getPoolMaxTotal());
         poolConfig.setMaxWaitMillis(redisConfig.getPoolMaxWait() * 1000);
-        JedisPool jp = new JedisPool(poolConfig, redisConfig.getHost(), redisConfig.getPort(), redisConfig.getTimeout() * 1000, redisConfig.getPassword(), 0);
-        return jp;
+        return new JedisPool(
+                poolConfig,
+                redisConfig.getHost(),
+                redisConfig.getPort(),
+                redisConfig.getTimeout() * 1000,
+                redisConfig.getPassword(), 0
+        );
     }
 
 }

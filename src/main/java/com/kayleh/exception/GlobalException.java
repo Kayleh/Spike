@@ -5,7 +5,7 @@ import com.kayleh.result.CodeMsg;
 /**
  * 定义程序序列化ID。
  * <p>
- * 序列化ID等同bai于身份验证，主要用于程序的版本控制，维护不同版本的兼容性以及避免在程序版本升级时程序报告的错误。
+ * 序列化ID等同于身份验证，主要用于程序的版本控制，维护不同版本的兼容性以及避免在程序版本升级时程序报告的错误。
  * <p>
  * Java的序列化机制通过在运行时确定类的serialVersionUID来验证版本一致性。
  * <p>
@@ -16,18 +16,18 @@ import com.kayleh.result.CodeMsg;
  */
 public class GlobalException extends RuntimeException
 {
-    private static final long serialVersionUID = 1L;
+    //private static final long serialVersionUID = 1L;
 
-    private CodeMsg cm;
+    private CodeMsg codeMsg;
 
-    public GlobalException(CodeMsg cm)
+    public GlobalException(CodeMsg codeMsg)
     {
-        super(cm.toString());
-        this.cm = cm;
+        super(codeMsg.toString());
+        this.codeMsg = codeMsg;
     }
 
-    public CodeMsg getCm()
+    public CodeMsg getCodeMsg()
     {
-        return cm;
+        return codeMsg;
     }
 }

@@ -18,16 +18,16 @@ import java.util.List;
  * @Date: 2020/12/6 14:16
  */
 @ControllerAdvice//它是增强的Controller，能够实现全局异常处理和全局数据绑定
-@ResponseBody//它能够实现对所有异常的接受，而在方法中，对不同的异常进行处理
+@ResponseBody
 public class GlobalExceptionHandler
 {
-    @ExceptionHandler(value = Exception.class)
+    @ExceptionHandler(value = Exception.class)//它能够实现对所有异常的接受，而在方法中，对不同的异常进行处理
     public Result<String> exceptionHandler(HttpServletRequest request, Exception e)
     {
         if (e instanceof GlobalException)
         {
             GlobalException ge = (GlobalException) e;
-            return Result.error(ge.getCm());
+            return Result.error(ge.getCodeMsg());
         } else if (e instanceof BindException)
         {
             //获取错误列表，拿取其中的第一个

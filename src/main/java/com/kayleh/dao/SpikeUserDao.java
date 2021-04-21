@@ -5,12 +5,14 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
+import org.springframework.stereotype.Component;
 
 /**
  * @Author: Kayleh
  * @Date: 2020/12/6 0:41
  */
 @Mapper
+@Component
 public interface SpikeUserDao
 {
     @Select("select * from spike_user where id = #{id}")

@@ -2,31 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d87655e-a1a3-4d63-9239-9be045d4a42e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/Service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/Service/GoodsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/Service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/Service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/Service/SpikeSerivce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/Service/SpikeSerivce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/access/AccessLimit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/access/AccessLimit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/aop/LogAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/Service/SpikeUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/Service/SpikeUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/controller/GoodsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/controller/SpikeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/controller/SpikeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/dao/GoodsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/dao/GoodsDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/dao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/dao/OrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/dao/SpikeUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/dao/SpikeUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/exception/GlobalException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/exception/GlobalException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/rabbitmq/MQReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/rabbitmq/MQReceiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/redis/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/redis/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/redis/RedisPoolFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/redis/RedisPoolFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/redis/RedisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/redis/RedisService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/goods_detail.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/goods_detail.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/order_detail.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/order_detail.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/order_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/order_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/Service/GoodsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/Service/GoodsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/Service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/Service/OrderService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/Service/SpikeSerivce.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/Service/SpikeSerivce.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/access/AccessLimit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/access/AccessLimit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/controller/OrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/controller/SpikeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/controller/SpikeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/dao/GoodsDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/dao/GoodsDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/dao/OrderDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/dao/OrderDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/rabbitmq/MQReceiver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/rabbitmq/MQReceiver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kayleh/redis/RedisService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kayleh/redis/RedisService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/goods_detail.htm" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/goods_detail.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/order_detail.htm" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/order_detail.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kayleh/result/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kayleh/result/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +42,7 @@
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\maven\repository" />
         <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
-        <option name="userSettingsFile" value="D:\JetBrains\IntelliJ IDEA 2019.3.2\plugins\maven\lib\maven3\conf\settings.xml" />
+        <option name="userSettingsFile" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.1.1\plugins\maven\lib\maven3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -79,7 +69,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="spring.boot" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -89,12 +79,15 @@
       <recent name="com.kayleh.Service" />
       <recent name="com.kayleh.rabbitmq" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.kayleh.util" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\project\Spike\src\main\resources\static" />
       <recent name="D:\project\Spike\src\main\resources\static\js" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.kayleh.util" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\project\Spike" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.MainApplication">
@@ -162,6 +155,36 @@
       <workItem from="1607775459305" duration="15919000" />
       <workItem from="1607831031183" duration="6081000" />
       <workItem from="1607840692727" duration="20145000" />
+      <workItem from="1607952239037" duration="434000" />
+      <workItem from="1608042490539" duration="96000" />
+      <workItem from="1608047373011" duration="3934000" />
+      <workItem from="1608186293320" duration="3202000" />
+      <workItem from="1608223964845" duration="1052000" />
+      <workItem from="1608353352284" duration="1284000" />
+      <workItem from="1608383293383" duration="1957000" />
+      <workItem from="1608386574584" duration="1401000" />
+      <workItem from="1608475596923" duration="27000" />
+      <workItem from="1608475643289" duration="7000" />
+      <workItem from="1608475713041" duration="129000" />
+      <workItem from="1608616378268" duration="3820000" />
+      <workItem from="1608657446126" duration="1177000" />
+      <workItem from="1608805764250" duration="1204000" />
+      <workItem from="1608896354884" duration="1819000" />
+      <workItem from="1608953157803" duration="36000" />
+      <workItem from="1608953211045" duration="9000" />
+      <workItem from="1608953274693" duration="60000" />
+      <workItem from="1608953588272" duration="55000" />
+      <workItem from="1608953690971" duration="357000" />
+      <workItem from="1609679393136" duration="6836000" />
+      <workItem from="1615562319237" duration="1083000" />
+      <workItem from="1615646943589" duration="73000" />
+      <workItem from="1615647058791" duration="301000" />
+      <workItem from="1617904952355" duration="46000" />
+      <workItem from="1617989677207" duration="96000" />
+      <workItem from="1618424260396" duration="3424000" />
+      <workItem from="1618458814892" duration="17331000" />
+      <workItem from="1618851284074" duration="16000" />
+      <workItem from="1619020724871" duration="511000" />
     </task>
     <servers />
   </component>
@@ -169,93 +192,49 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="311" y="4" key="#Project_Structure" timestamp="1607794011120">
+    <state x="662" y="358" width="596" height="376" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1617989738256">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="311" y="4" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1607794011120" />
-    <state x="551" y="184" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607258993933">
+    <state x="662" y="358" width="596" height="376" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1080@0.0.1920.1080" timestamp="1617989738256" />
+    <state x="324" y="288" key="FileChooserDialogImpl" timestamp="1618480074635">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="551" y="184" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1607258993933" />
-    <state x="585" y="302" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607577411732">
+    <state x="324" y="288" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1618480074635" />
+    <state width="1851" height="494" key="GridCell.Tab.0.bottom" timestamp="1618481662257">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="585" y="302" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1607577411732" />
-    <state x="717" y="130" width="486" height="950" key="#com.intellij.ide.util.MemberChooser" timestamp="1607831816827">
+    <state width="1851" height="494" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1618481662257" />
+    <state width="1851" height="494" key="GridCell.Tab.0.center" timestamp="1618481662257">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="717" y="130" width="486" height="950" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1607831816827" />
-    <state x="623" y="251" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1607831776680">
+    <state width="1851" height="494" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1618481662257" />
+    <state width="1851" height="494" key="GridCell.Tab.0.left" timestamp="1618481662257">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="251" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1607831776680" />
-    <state x="692" y="430" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1606983103084">
+    <state width="1851" height="494" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1618481662257" />
+    <state width="1851" height="494" key="GridCell.Tab.0.right" timestamp="1618481662257">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="692" y="430" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606983103084" />
-    <state x="592" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1607832455964">
+    <state width="1851" height="494" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1618481662257" />
+    <state width="1851" height="862" key="GridCell.Tab.1.bottom" timestamp="1618478535325">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="592" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1607832455964" />
-    <state x="686" y="230" key="FileChooserDialogImpl" timestamp="1607848727231">
+    <state width="1851" height="862" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1618478535325" />
+    <state width="1851" height="862" key="GridCell.Tab.1.center" timestamp="1618478535325">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="686" y="230" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1607848727231" />
-    <state width="1849" height="433" key="GridCell.Tab.0.bottom" timestamp="1607875669967">
+    <state width="1851" height="862" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1618478535325" />
+    <state width="1851" height="862" key="GridCell.Tab.1.left" timestamp="1618478535325">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1849" height="433" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1607875669967" />
-    <state width="1849" height="433" key="GridCell.Tab.0.center" timestamp="1607875669967">
+    <state width="1851" height="862" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1618478535325" />
+    <state width="1851" height="862" key="GridCell.Tab.1.right" timestamp="1618478535325">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1849" height="433" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1607875669967" />
-    <state width="1849" height="433" key="GridCell.Tab.0.left" timestamp="1607875669967">
+    <state width="1851" height="862" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1618478535325" />
+    <state x="320" y="89" key="SettingsEditor" timestamp="1618480075640">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1849" height="433" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1607875669967" />
-    <state width="1849" height="433" key="GridCell.Tab.0.right" timestamp="1607875669967">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1849" height="433" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1607875669967" />
-    <state width="1849" height="433" key="GridCell.Tab.1.bottom" timestamp="1607875669963">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1849" height="433" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1607875669963" />
-    <state width="1849" height="433" key="GridCell.Tab.1.center" timestamp="1607875669963">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1849" height="433" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1607875669963" />
-    <state width="1849" height="433" key="GridCell.Tab.1.left" timestamp="1607875669963">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1849" height="433" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1607875669963" />
-    <state width="1849" height="433" key="GridCell.Tab.1.right" timestamp="1607875669963">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1849" height="433" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1607875669963" />
-    <state x="373" y="105" key="Maven.ArtifactSearchDialog" timestamp="1606982833122">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="373" y="105" key="Maven.ArtifactSearchDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606982833122" />
-    <state x="320" y="89" key="SettingsEditor" timestamp="1606988577198">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="320" y="89" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1606988577198" />
-    <state width="698" height="674" key="SwitcherDM" timestamp="1607795681487">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="698" height="674" key="SwitcherDM/0.0.1920.1080@0.0.1920.1080" timestamp="1607795681487" />
-    <state x="659" y="292" key="chooseDestDirectoryDialog" timestamp="1606982233165">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="659" y="292" key="chooseDestDirectoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606982233165" />
-    <state x="539" y="41" width="842" height="1037" key="search.everywhere.popup" timestamp="1607873484333">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="539" y="41" width="842" height="1037" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1607873484333" />
-    <state x="622" y="131" key="spring file set editor" timestamp="1606983125982">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="622" y="131" key="spring file set editor/0.0.1920.1080@0.0.1920.1080" timestamp="1606983125982" />
+    <state x="320" y="89" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1618480075640" />
   </component>
 </project>

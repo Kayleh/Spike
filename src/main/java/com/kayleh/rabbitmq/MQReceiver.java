@@ -33,9 +33,9 @@ public class MQReceiver
     public void receiver(String message)
     {
         log.info("receive message:" + message);
-        SpikeMessage mm = RedisService.stringToBean(message, SpikeMessage.class);
-        SpikeUser user = mm.getUser();
-        long goodsid = mm.getGoodsId();
+        SpikeMessage sm = RedisService.stringToBean(message, SpikeMessage.class);
+        SpikeUser user = sm.getUser();
+        long goodsid = sm.getGoodsId();
 
         GoodsVo goods = goodsService.getGoodsVoByGoodsId(goodsid);
         int stock = goods.getStockCount();

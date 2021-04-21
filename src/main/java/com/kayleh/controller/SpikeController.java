@@ -64,11 +64,14 @@ public class SpikeController implements InitializingBean
             localOverMap.put(goods.getId(), false);
         }
     }
+
     @RequestMapping(value = "/reset", method = RequestMethod.GET)
     @ResponseBody
-    public Result<Boolean> reset(Model model) {
+    public Result<Boolean> reset(Model model)
+    {
         List<GoodsVo> goodsList = goodsService.listGoodsVo();
-        for (GoodsVo goods : goodsList) {
+        for (GoodsVo goods : goodsList)
+        {
             goods.setStockCount(10);
             redisService.set(GoodsKey.getSpikeGoodsStock, "" + goods.getId(), 10);
             localOverMap.put(goods.getId(), false);
@@ -78,22 +81,6 @@ public class SpikeController implements InitializingBean
         spikeSerivce.reset(goodsList);
         return Result.success(true);
     }
-//    @RequestMapping(value = "/reset", method = RequestMethod.GET)
-//    @ResponseBody
-//    public Result<Boolean> reset(Model model)
-//    {
-//        List<GoodsVo> goodsList = goodsService.listGoodsVo();
-//        for (GoodsVo goods : goodsList)
-//        {
-//            goods.setStockCount(10);
-//            redisService.set(GoodsKey.getSpikeGoodsStock, "" + goods.getId(), 10);
-//            localOverMap.put(goods.getId(), false);
-//        }
-//        redisService.delete(OrderKey.getMiaoshaOrderByUidGid);
-//        redisService.delete(MiaoshaKey.isGoodsOver);
-//        miaoshaService.reset(goodsList);
-//        return Result.success(true);
-//    }
 
     @RequestMapping(value = "/{path}/do_spike", method = RequestMethod.POST)
     @ResponseBody

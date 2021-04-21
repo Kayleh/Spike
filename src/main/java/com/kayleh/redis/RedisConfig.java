@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
  * RedisConfig，作为Bean自动装配进来，我们还要建立JedisPoolConfig来设置一些参数，供建立JedisPool时读取
  */
 @Component
+//读取配置文件的注解,指定前缀，读以redis打头的
 @ConfigurationProperties(prefix = "redis")
 public class RedisConfig
 {

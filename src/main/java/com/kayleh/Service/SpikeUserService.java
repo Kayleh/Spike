@@ -69,6 +69,7 @@ public class SpikeUserService
         return true;
     }
 
+
     public SpikeUser getByToken(HttpServletResponse response, String token)
     {
         if (StringUtils.isEmpty(token))
