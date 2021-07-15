@@ -208,8 +208,6 @@ public class RedisService
             String realKey = prefix.getPrefix() + key;
             return jedis.decr(realKey);
         } finally
-
-
         {
             returnToPool(jedis);
         }

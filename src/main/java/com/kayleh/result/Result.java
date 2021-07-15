@@ -1,15 +1,19 @@
 package com.kayleh.result;
 
 /**
- * code用来保存状态码，msg状态信息，data是返回的对象（泛型）
+ * 在成功和失败的时候用于结果返回表示
+ * 另外它引入CodeMsg类，在CodeMsg类中，我们自定义了一些状态码和状态信息，用起来也比较方便
  *
  * @Author: Kayleh
  * @Date: 2020/12/3 16:37
  */
 public class Result<T>
 {
+    //状态码
     private int code;
+    //状态信息
     private String msg;
+    //返回的数据
     private T data;
 
     public Result(T data)

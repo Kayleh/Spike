@@ -49,11 +49,12 @@ public class AccessInterceptor extends HandlerInterceptorAdapter
             int seconds = accessLimit.seconds();
             int maxCount = accessLimit.maxCount();
             boolean needLogin = accessLimit.needLogin();
-            String key = request.getRequestURI();
+            String key = request.getRequestURI();//获取请求的地址
             if (needLogin)
             {
                 if (user == null)
                 {
+                    //user为空，递交错误信息
                     render(response, CodeMsg.SESSION_ERROR);
                     return false;
                 }
@@ -116,7 +117,6 @@ public class AccessInterceptor extends HandlerInterceptorAdapter
             }
         }
         return null;
-
     }
 
 }

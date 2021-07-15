@@ -1,3 +1,35 @@
+1.Result类用于结果返回
+
+2.Redis,keyPrefix前缀(模板方法)
+
+3.fastjson存储对象到redis
+
+4.登录过程2次md5
+- 第一次:固定salt值,针对传输安全,http是明文传输
+- 第二次:随机salt值,针对数据库安全.
+
+5.JSR参数校验，自定义注解ConstraintValidator
+
+6.GlobalException 
+
+7.redis分布式Session
+
+8.拦截器AccessInterceptor extends HandlerInterceptorAdapter
+
+9.参数校验WebConfig extends WebMvcConfigurerAdapter
+添加UserArgumentResolver implements HandlerMethodArgumentResolver
+
+10.页面缓存thymeleafViewResolver
+
+11.对象缓存getById
+
+12.页面静态化：去掉Model向前端传值的逻辑，只留下业务处理过程，并将所需要的的值封装在GoodsDetailVo对象中
+为了防止视图解析器的跳转，将html写为htm
+
+13.
+
+
+
 ##用到的技术
 ![](https://github.com/dcg123/miaosha/blob/master/src/main/resources/static/img/technical.png)
 ##实现的模块
@@ -61,20 +93,36 @@
   商品秒杀系统——Java并发实战和并发优化
 
   优化总结：
-  前端控制：
+  - 前端控制：
   暴露接口，按钮防重复
+  
   动静态数据分离：CDN缓存，后端缓存
+  
   事务竞争优化：减少事务锁时间（存储过程）
-  后端优化
+  
+  - 后端优化
   使用redis缓存热门商品
+  
   优化点：暴露接口。
+  
   用户可能一直再刷页面。越热的产品访问越多
+  
   事务简单优化：秒杀执行优化
+  
   行级锁发生在减库存操作
+  
   先执行记录购买行为，再执行减库存操作
+  
   事务竞争优化
+  
   事务SQL在MySql端执行（存储过程）
+  
   存储过程优化：事务行级锁持有时间
+  
   不要过多依赖存储过程
+  
   简单的逻辑可以应用存储过程
+  
   QPS: 一个秒杀单6000/qps
+  
+  

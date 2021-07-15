@@ -13,7 +13,7 @@ import redis.clients.jedis.JedisPoolConfig;
  * @Date: 2020/12/3 17:42
  */
 @Service
-public class RedisPoolFactory
+public class JedisPoolFactory
 {
     @Autowired
     RedisConfig redisConfig;

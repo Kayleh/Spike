@@ -13,11 +13,12 @@ public class MD5Util
         return DigestUtils.md5Hex(src);
     }
 
-    private static final String salt = "1a2b3c4d";
+    private static final String salt1 = "1a2b3c4d";
 
+    //输入加密
     public static String inputPassToFormPass(String inputPass)
     {
-        String str = "" + salt.charAt(0) + salt.charAt(2) + inputPass + salt.charAt(5) + salt.charAt(4);
+        String str = "" + salt1.charAt(0) + salt1.charAt(2) + inputPass + salt1.charAt(5) + salt1.charAt(4);
         System.out.println(str);
         return md5(str);
     }
